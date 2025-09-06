@@ -81,9 +81,9 @@
       "critical": 15
     },
     "events": {
-      "on-discharging-warning": "notify-send -u normal 'Low Battery'",
-      "on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
-      "on-charging-100": "notify-send -u normal 'Battery Full!'"
+      "on-discharging-warning": "hyprctl notify -1 10000 'rgb(ff8e00)' 'fontsize:35 Plug me in!'",
+      "on-discharging-critical": "hyprctl notify -1 10000 'rgb(ff0000)' 'fontsize:35 Very Low Battery!'",
+      "on-charging-100": "hyprctl notify -1 10000 'rgb(18ff00)' 'fontsize:35 Battery Full!'"
     },
     "format": "{capacity}% {icon}",
     "format-icons": ["", "", "", "", ""],
