@@ -1,7 +1,7 @@
 # Me dotfiles
 Tested on arch + wayland
 
-Philosophy - productivity > aesthetics > convention > windows
+Philosophy - productivity > aesthetics > convention > windows ecosystem
 
 Steps - https://wiki.archlinux.org/title/Dotfiles
 
