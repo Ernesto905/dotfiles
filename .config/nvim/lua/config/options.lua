@@ -2,6 +2,9 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.splitright = true
 vim.opt.number = true
 
+vim.opt.autoread = true -- sync buffers across processes
+vim.opt.swapfile = false
+
 vim.opt.wrap = true
 vim.opt.linebreak = true
 vim.opt.breakindent = true

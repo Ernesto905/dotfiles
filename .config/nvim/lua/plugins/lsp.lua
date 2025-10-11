@@ -9,7 +9,6 @@ return {
     },
     config = function()
       local on_attach = function(client, bufnr)
-        print("LSP attached to buffer: " .. bufnr .. " Client: " .. client.name)
         local nmap = function(keys, func, desc)
           if desc then
             desc = "LSP: " .. desc
@@ -29,7 +28,7 @@ return {
 
       local servers = {
         "lua_ls",
-        --"pyright",
+        "ts_ls",
         "ruff",
       }
 
@@ -46,6 +45,16 @@ return {
         })
       end
     end,
+  },
+  {
+    "echasnovski/mini.pairs",
+    event = "VeryLazy",
+    opts = {
+      modes = { insert = true, command = true, terminal = false },
+      skip_ts = { "string" },
+      skip_unbalanced = true,
+      markdown = true,
+    },
   },
   {
     'stevearc/conform.nvim',
