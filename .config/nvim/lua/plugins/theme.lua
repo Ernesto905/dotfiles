@@ -4,7 +4,7 @@ return {
     lazy = false,
     priority = 1001,
     config = function()
-      vim.cmd.colorscheme('cyberdream')
+      vim.cmd.colorscheme("cyberdream")
     end,
   },
 }
