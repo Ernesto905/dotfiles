@@ -30,6 +30,7 @@ return {
         "lua_ls",
         "ts_ls",
         "ruff",
+        "gopls",
       }
 
       require("mason").setup()
